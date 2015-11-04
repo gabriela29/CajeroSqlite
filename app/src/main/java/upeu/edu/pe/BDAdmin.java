@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 public class BDAdmin { //o bd adpater para administrar la base de datos
     private BDHelper helper;
     private Context contexto;
-
+//
     public BDAdmin(Context contexto){//constructor que reciba el contexto inicializamos el helper
         this.contexto = contexto;//inicializa dos variables una es el contexto y otro es el ayudante de la manipulacion de base de datos
         helper = null;
