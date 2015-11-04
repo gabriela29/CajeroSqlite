@@ -13,11 +13,13 @@
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/logTxtClave"/>
+    android:id="@+id/logTxtClave"
+    android:hint="@string/strLogTxtClave"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/logTxtCuenta" />
+        android:id="@+id/logTxtCuenta"
+        android:hint="@string/strLogTxtCuenta" />
 </FrameLayout>
 
     <FrameLayout
@@ -26,11 +28,15 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/logBtnAcceder"/>
+        android:id="@+id/logBtnAcceder"
+        android:text="@string/strLogBtnAcceder" />
+        />
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/logBtnSeguir"/>
+            android:id="@+id/logBtnSeguir"
+            android:onClick="LogSeguir"
+            android:text="@string/strLogBtnSeguir" />
 
     </FrameLayout>
     <TextView
@@ -43,6 +49,9 @@
 <Button
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/logBtnAnterior"/>
+    android:id="@+id/logBtnAnterior"
+    android:text="@string/strLogBtnAnterior"
+    android:onClick="logAnterior"/>
+
     </FrameLayout>
 </LinearLayout>

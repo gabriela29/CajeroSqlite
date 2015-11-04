@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">CajeroSqlite-Auqui</string>
     <string name="action_settings">Settings</string>
+    <string name="strLogTxtCuenta">Digite su cuenta de Usuario</string>
+    <string name="strLogTxtClave">Digite su clave de Usuario</string>
+
+    <string name="strLogBtnSeguir">Seguir</string>
+    <string name="strLogBtnAcceder">Acceder</string>
+    <string name="strLogBtnAnterior">Anterior</string>
+
 </resources>
