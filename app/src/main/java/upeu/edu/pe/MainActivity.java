@@ -1,5 +1,6 @@
 package upeu.edu.pe;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+
+    private EditText txtCuenta, txtClave;//comenzamos a declarar las variables para poder manipular la interfaz de usuario
+    private Button btnSeguir, btnAcceder, btnAnterior;
+    private TextView labCuenta;
+    private String strsCuenta, strClave, laClave;
+    private Context CTX;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,10 +34,29 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Presentar", Snackbar.LENGTH_LONG)//ola ffffjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+                Snackbar.make(view, "Presentar", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
+        referciarControles();//controles de la interfaz referenciar todos los elementos que vamos a utilizar
+    }
+
+    private void  referciarControles(){//un metodo que permite hacer referencia a los controles de la interfaz
+        CTX = getApplicationContext();//contexto de la aplicacion
+
+        txtCuenta =(EditText) findViewById(R.id.logTxtCuenta);//busaca vista por identificador osea el id
+        txtClave =(EditText) findViewById(R.id.logTxtClave);
+        labCuenta = (TextView) findViewById(R.id.logLabCuenta);
+        btnSeguir = (Button) findViewById(R.id.logBtnSeguir);
+        btnAcceder = (Button) findViewById(R.id.logBtnAcceder);// la conversion se hace acia la clase button
+        btnAnterior = (Button) findViewById(R.id.logBtnAnterior);
+
+        txtCuenta.requestFocus();//que el enfoque lo recupere la caja de texto cuenta al momento de
+}
+
+    private  boolean valida(){
+
+        return true;
     }
 
     @Override
