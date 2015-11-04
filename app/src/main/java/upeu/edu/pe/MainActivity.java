@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         txtCuenta.requestFocus();//que el enfoque lo recupere la caja de texto cuenta al momento de
 }
 
-    private  boolean valida(){ //le
+    private  boolean valida(){ //le alabamos
 
         return true;
     }
